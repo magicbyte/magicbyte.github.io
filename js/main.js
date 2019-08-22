@@ -3,9 +3,8 @@ $(document).ready(function () {
     /* ===================================
      Loading Timeout
      ====================================== */
-
     setTimeout(function () {
-        $("#loader").fadeOut("slow");
+        $("#loader").fadeOut();
     }, 1000);
 
 });

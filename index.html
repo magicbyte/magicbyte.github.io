@@ -820,17 +820,17 @@
                     </div>
                     <form class="margin-50px-bottom">
                             <div class="col-xs-6 no-padding">
-                                <input type="text" class="form-control margin-30px-bottom" placeholder="Your Name">
+                                <input id="mailName" type="text" class="form-control margin-30px-bottom" placeholder="Your Name">
                             </div>
                             <div class="col-xs-6 no-padding">
-                                <input type="email" class="form-control margin-30px-bottom" placeholder="Your Email">
+                                <input id="mailEmail" type="email" class="form-control margin-30px-bottom" placeholder="Your Email">
                             </div>
 
                             <div class="col-xs-12 no-padding">
-                            <textarea class="form-control margin-50px-bottom"
+                            <textarea id="mailBody" class="form-control margin-50px-bottom"
                                       placeholder="Your Message"></textarea>
                             </div>
-                            <a href="#." class="btn btn-rounded btn-red btn-large width-100">Get Started Now</a>
+                            <a href="javascript:sendMail();" id="sendMail" class="btn btn-rounded btn-red btn-large width-100">Get Started Now</a>
                     </form>
                     <div class="address bg-light-gray padding-20px-all xs-margin-50px-bottom">
                         <div class="address-item">
@@ -967,6 +967,8 @@
 <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+<!-- Mail (max) -->
+<script src="js/mail.js"></script>
 <!-- Google Map Api -->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYaBV29AQnzWx6IbudnKUJ-fgsu1NzM2k&callback=initMap"></script>
 <script>
