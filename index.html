@@ -88,10 +88,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-2 col-xs-5 width-auto sm-width-15 xs-width-20">
+                <!-- <div class="col-md-2 col-xs-5 width-auto sm-width-15 xs-width-20">
                     <div class="header-searchbar">
                         <a href="#search-header" title="Search" class="header-search-form"><i class="fa fa-search search-button"></i></a>
-                        <!-- search input-->
                         <form id="search-header" method="post" action="#." name="search-header" class="search-form-result mfp-hide">
                             <div class="search-form position-relative">
                                 <button type="submit" class="fa fa-search close-search search-button"></button>
@@ -99,17 +98,16 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </nav>
 
 <!-- Push Nav Button -->
-    <div id="showMenu" class="showMenuButton-two">
+    <div id="showMenu" class="showMenuButton-two visible-sm visible-xs">
         <span class="hamburger"></span>
     </div>
-    <!-- end navigation -->
-</header>
+</header> 
 <!-- end header -->
 
 <section id="home" class="no-padding no-transition">
@@ -577,26 +575,25 @@
 
 
 <!-- start work -->
-<section id="work" class="portfolio no-transition">
-
+<section id="work" class="portfolio no-transition  no-padding-top">
     <div class="container">
-    <div class="row">
-        <!-- title section -->
-        <div class="col-lg-9 col-md-10 col-sm-12 text-center center-col">
-            <div class="area-heading text-center margin-70px-bottom">
-                <div class="text-medium text-red margin-10px-bottom">Our Creative Portfolio</div>
-                <h3 class="area-title text-capitalize alt-font text-blue margin-20px-bottom font-weight-300 sm-width-100 xs-width-100">
-                    Recent Work</h3>
-                <div class="seperator margin-20px-bottom">
-                    <hr class="seperator-two">
-                    <hr class="seperator-one">
+        <div class="row">
+            <!-- title section -->
+            <div class="col-lg-9 col-md-10 col-sm-12 text-center center-col">
+                <div class="area-heading text-center margin-70px-bottom">
+                    <div class="text-medium text-red margin-10px-bottom">Our Creative Portfolio</div>
+                    <h3 class="area-title text-capitalize alt-font text-blue margin-20px-bottom font-weight-300 sm-width-100 xs-width-100">
+                        Recent Work</h3>
+                    <div class="seperator margin-20px-bottom">
+                        <hr class="seperator-two">
+                        <hr class="seperator-one">
+                    </div>
+                    <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Maecenas ut lectus
+                        a ipsum gravida ornare. Cras scelerisque in mauris id pretium.
+                        Praesent convallis neque quis erat lobortis gravida id et dolor.</p>
                 </div>
-                <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Maecenas ut lectus
-                    a ipsum gravida ornare. Cras scelerisque in mauris id pretium.
-                    Praesent convallis neque quis erat lobortis gravida id et dolor.</p>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="row">
@@ -921,17 +918,13 @@
     <!-- Push Nav Link -->
     <ul class="navbar outer-nav right vertical alt-font">
         <li><a href="#home" class="scroll icon-home">Home</a></li>
-        <li><a href="#features" class="scroll icon-features">Features</a></li>
         <li><a href="#about" class="scroll icon-about">About</a></li>
+        <li><a href="#technologies" class="scroll icon-features">Technologies</a></li>
         <li><a href="#work" class="scroll icon-work">Work</a></li>
-        <li><a href="#price" class="scroll icon-pricing">Pricing</a></li>
         <li><a href="#blog" class="scroll icon-blog">Blog</a></li>
         <li><a href="#contact" class="scroll icon-contact">Contact</a></li>
     </ul>
 </div>
-
-
-
 
 
 
@@ -958,7 +951,7 @@
 <!-- parallax -->
 <script src="js/parallaxie.min.js"></script>
 <!-- particles -->
-<script src="js/particles.min.js"></script>
+<!-- <script src="js/particles.min.js"></script> -->
 <!-- isotope.pkgd.min js -->
 <script src="js/isotope.pkgd.min.js"></script>
 <!-- revolution -->
@@ -975,8 +968,17 @@
 <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
 <!-- Google Map Api -->
-<script src="http://maps.google.com/maps/api/js?key=AIzaSyAOBKD6V47-g_3opmidcmFapb3kSNAR70U"></script>
-<script src="js/map.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYaBV29AQnzWx6IbudnKUJ-fgsu1NzM2k&callback=initMap"></script>
+<script>
+function initMap(q) {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 50.45, lng: 30.52},
+        zoom: 10
+    });
+}
+</script>
+<!-- <script src="http://maps.google.com/maps/api/js?key=AIzaSyAOBKD6V47-g_3opmidcmFapb3kSNAR70U"></script> -->
+<!-- <script src="js/map.js"></script> -->
 <!-- setting -->
 <script src="js/main.js"></script>
 </body>

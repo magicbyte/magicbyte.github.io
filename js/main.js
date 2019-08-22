@@ -88,30 +88,12 @@ jQuery(function ($) {
 
 
     /* ===================================
-     Animated Counter
-     ====================================== */
-
-
-    $('.count').each(function () {
-        $(this).prop('Counter', 0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 2000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-    });
-
-
-    /* ===================================
      Animated Progress Bar
      ====================================== */
 
     $(".progress-bar").each(function () {
         $(this).appear(function () {
-            $(this).animate({width: $(this).attr("aria-valuenow") + "%"}, 2000)
+            $(this).animate({width: $(this).attr("aria-valuenow") + "%"}, 500)
         });
     });
 
